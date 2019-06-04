@@ -33,6 +33,6 @@ func main() {
         // Loop to all Pods and print them out 
         fmt.Printf("There are %d Pods available in the Cluster \n", len(pods.Items))
         for _, pod := range pods.Items {
-                fmt.Printf("Pod name=/%s\n", pod.GetName())
+                fmt.Println(pod.GetName())
         }
 }
